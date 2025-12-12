@@ -186,7 +186,7 @@ select {
   }
 
   .buttons button {
-    padding: 5px 7px;
+    padding: 5px;
     margin: 2px;
   }
 }
