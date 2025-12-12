@@ -7,49 +7,82 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container">
-      <h3>Text-to-Speech Readear</h3>
+    <header>
+      <nav class="navbar">
+        <div class="logo">JS Projects</div>
+        <ul class="nav-links">
+          <li><a href="https://timepanel.netlify.app/">Digital clock</a></li>
+          <li>
+            <a href="https://quickcalculatoronline.netlify.app/">Calculator</a>
+          </li>
+          <li><a href="https://todoni.netlify.app/">Todo App</a></li>
+          <li><a href="https://voicefromtext.netlify.app/">TTSpeech</a></li>
+        </ul>
+        <div class="hamburger">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+      </nav>
+    </header>
 
-      <div class="input-container">
-        <p>Enter text to read aloud</p>
-        <textarea
-          id="input"
-          placeholder="Type of paste text here"
-          cols="30"
-          rows="5"
-        ></textarea>
-      </div>
+    <main>
+      <div class="container">
+        <h3>Text-to-Speech Readear</h3>
 
-      <div class="function-buttons-container">
-        <p>Status: <span id="tts-status">Ready</span></p>
-        <div class="buttons">
-          <button id="speak-btn" class="active">Speak</button>
-          <button id="stop-btn">Stop</button>
-          <button id="pause-btn">Pause/Resume</button>
+        <div class="input-container">
+          <p>Enter text to read aloud</p>
+          <textarea
+            id="input"
+            placeholder="Type of paste text here"
+            cols="30"
+            rows="5"
+          ></textarea>
+        </div>
+
+        <div class="function-buttons-container">
+          <p>Status: <span id="tts-status">Ready</span></p>
+          <div class="buttons">
+            <button id="speak-btn" class="active">Speak</button>
+            <button id="stop-btn">Stop</button>
+            <button id="pause-btn">Pause/Resume</button>
+          </div>
+        </div>
+
+        <div class="voice-and-range-container">
+          <p>voice</p>
+          <select id="voice-select">
+            <option value="Default Voice">voice 1</option>
+            <option value="voice1">voice 2</option>
+            <option value="voice2">voice 3</option>
+          </select>
+          <div class="range-container">
+            <input
+              type="range"
+              min="0.5"
+              max="2"
+              step="0.1"
+              value="1"
+              id="speed-range"
+            />
+            <span id="speed-value">1.0x</span>
+          </div>
         </div>
       </div>
+    </main>
 
-      <div class="voice-and-range-container">
-        <p>voice</p>
-        <select id="voice-select">
-          <option value="Default Voice">voice 1</option>
-          <option value="voice1">voice 2</option>
-          <option value="voice2">voice 3</option>
-        </select>
-        <div class="range-container">
-          <input
-            type="range"
-            min="0.5"
-            max="2"
-            step="0.1"
-            value="1"
-            id="speed-range"
-          />
-          <span id="speed-value">1.0x</span>
-        </div>
-      </div>
-    </div>
-
+      
+    <footer class="footer">
+      <p>Contact us on WhatsApp:</p>
+      <a
+      href="https://wa.me/2349068155992"
+      target="_blank"
+      class="whatsapp-link"
+      >
+      Chat with us
+    </a>
+  </footer>
+  
     <script src="script.js"></script>
   </body>
 </html>
